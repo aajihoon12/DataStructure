@@ -1,1 +1,5 @@
 # DataStructure
+
+```
+example of DataStructure
+```

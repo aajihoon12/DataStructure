@@ -1,10 +1,12 @@
 #ifndef __D_LINKED_LIST_H__
 #define __D_LINKED_LIST_H__
 
+#include "CH03_Point.h"
+
 #define TRUE 1
 #define FALSE 0
 
-typedef int LData;
+typedef Point* LData;
 
 typedef struct _node {
     LData data;

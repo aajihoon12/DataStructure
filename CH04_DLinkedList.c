@@ -19,8 +19,13 @@ void FInsert(List * plist, LData data) {
 }
 
 void SInsert(List * plist, LData data) {
+<<<<<<< HEAD
     Node* newNode=(Node*)malloc(sizeof(Node));
     Node* pred=plist->head;
+=======
+    Node *newNode=(Node*)malloc(sizeof(Node));
+    Node *pred=plist->head;
+>>>>>>> 5c0fa13... CH05
     newNode->data=data;
 
     while(pred->next != NULL && comp(data, pred->next->data) >= 0) {
@@ -28,7 +33,12 @@ void SInsert(List * plist, LData data) {
     }
 
     newNode->next=pred->next;
+<<<<<<< HEAD
     pred->next=newNode;
+=======
+    pred->next-newNode;
+
+>>>>>>> 5c0fa13... CH05
     (plist->numOfData)++;
 }
 
